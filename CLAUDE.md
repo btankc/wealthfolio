@@ -11,7 +11,9 @@ is wanted.
 - `STATE.md` is local and **git-excluded** — read it, never commit it.
 - Package manager is `corepack pnpm`. Not bare npm, not bare pnpm.
 - A second router at `.claude/CLAUDE.md` covers the app layout (`apps/`, `crates/`,
-  `packages/`).
+  `packages/`). **It is upstream's, byte-identical to their main branch — never trim it.**
+  `routelint` reports `W-I1` on it (104 lines, but 785 tok, under budget). Advisory, and
+  correct to leave: editing it buys nothing and conflicts on every upstream pull.
 
 ## Project-local skills — these ship with the fork, not with the workspace
 
