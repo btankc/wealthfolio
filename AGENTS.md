@@ -1,5 +1,15 @@
 # AGENTS.md
 
+<!-- FORK NOTE — btankc/wealthfolio. Added by the fork; keep it through upstream merges. -->
+
+> **This is a fork, and two things below are wrong for it.** The default branch is
+> **`bryan-main`**, not `main`. Every `pnpm` command in this file must be run as
+> **`corepack pnpm …`** — never bare `pnpm`, never `npm`.
+>
+> The fork's own rules, its downstream consumer, and the v3 networking lessons live in
+> **`CLAUDE.md`** beside this file. It is not a duplicate of this guide, and a tool that reads
+> only `AGENTS.md` will miss all of it. Read both.
+
 AI agent guide for this repository. Covers behavioral rules, architecture, and
 common task playbooks.
 

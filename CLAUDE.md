@@ -10,8 +10,17 @@ is wanted.
 
 - `STATE.md` is local and **git-excluded** — read it, never commit it.
 - Package manager is `corepack pnpm`. Not bare npm, not bare pnpm.
+- **`AGENTS.md` at the root is upstream's**, and it is the architecture guide: code layout,
+  run targets, the feature playbook, TypeScript/Rust conventions, the validation checklist.
+  Read it for *how the app is built*; this file is only *how the fork differs*. It carries a
+  short fork note at the top, because a tool that reads `AGENTS.md` and not `CLAUDE.md` would
+  otherwise run bare `pnpm` against `main` — its run table says bare `pnpm` eight times.
+  Keep that note through upstream merges; everything below it is upstream's and is not ours
+  to edit.
 - A second router at `.claude/CLAUDE.md` covers the app layout (`apps/`, `crates/`,
   `packages/`). **It is upstream's, byte-identical to their main branch — never trim it.**
+  Verified still byte-identical 2026-09-16; it overlaps `AGENTS.md` now, but both are
+  upstream's and neither is ours to reconcile.
   `routelint` reports `W-I1` on it (104 lines, but 785 tok, under budget). Advisory, and
   correct to leave: editing it buys nothing and conflicts on every upstream pull.
 
