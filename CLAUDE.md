@@ -40,6 +40,12 @@ For React component API design and performance, the workspace-level `composition
 and `react-best-practices` apply here too — they are React-only and this is the only React
 codebase.
 
+## Routing
+
+| when | read |
+|---|---|
+| what the review panel checks | REVIEW.md |
+
 ## Before any upgrade — read this first
 
 The v3 networking migration is the expensive lesson. The webview blocks `fetch` outright and
